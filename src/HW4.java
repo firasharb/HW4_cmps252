@@ -8,5 +8,10 @@ public class HW4 {
 		var d = LocalDate.parse("1999-01-22");
 		
 		System.out.println(t1);
+		Downloader d1 = new DownloaderClass();
+		d1.downloadHtmlToFile("C", "C.htm");
+		
+		HtmlToCsvClass c = new HtmlToCsvClass();
+		c.htmlToCsv("C.htm", "C.csv");
 	}
 }
